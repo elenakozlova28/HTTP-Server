@@ -17,8 +17,6 @@ const server = http.createServer((req, res) => {
       if (err) throw err;
     });
   };
-
-
   
   // Static file serving
   const serveStaticFile = (filePath, contentType, response) => {
