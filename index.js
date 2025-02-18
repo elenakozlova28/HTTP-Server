@@ -9,6 +9,8 @@ const server = http.createServer((req, res) => {
   const parsedUrl = url.parse(req.url, true);
   const pathname = parsedUrl.pathname;
 
+
+  
   // Logger Function
   const logRequest = () => {
     const logMessage = `${new Date().toISOString()} - ${req.method} ${req.url}`;
