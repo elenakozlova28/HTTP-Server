@@ -18,8 +18,6 @@ const server = http.createServer((req, res) => {
     });
   };
 
-
-  
   // Static file serving
   const serveStaticFile = (filePath, contentType, response) => {
     fs.readFile(filePath, 'utf8', (err, content) => {
