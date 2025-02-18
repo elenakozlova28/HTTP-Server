@@ -16,9 +16,6 @@ const server = http.createServer((req, res) => {
     fs.appendFile('server.log', logMessage + '\n', (err) => {
       if (err) throw err;
     });
-
-
-
     
   };
   
